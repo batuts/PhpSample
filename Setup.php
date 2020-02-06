@@ -23,7 +23,7 @@ class Setup extends JCModuleController {
     protected function getCrudList() {
         return [
             ["crudId"=>static::CRUD_OULIST, "role"=>CRUD_ROLE_MASTER, "parentCrud"=>""],
-            ["crudId"=>static::CRUD_OU, "role"=>CRUD_ROLE_DETAIL, "parentCrud"=>static::CRUD_OU],
+            ["crudId"=>static::CRUD_OU, "role"=>CRUD_ROLE_DETAIL, "parentCrud"=>static::CRUD_OULIST],
         ];
     }
 
